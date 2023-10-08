@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    
+
     'blog',
     'users',
     'crispy_forms',
@@ -127,7 +127,9 @@ CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 
 # Change default redirect after login
-LOGIN_REDIRECT_URL='blog-home'
+LOGIN_REDIRECT_URL = 'blog-home'
+# must login to access
+LOGIN_URL = 'login'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
