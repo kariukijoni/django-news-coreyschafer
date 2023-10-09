@@ -1,13 +1,14 @@
 from django.shortcuts import render
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView, DetailView, CreateView
 from .models import Post
 
 
-def home(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blog/home.html', context)
+# def home(request):
+#     context = {
+#         'posts': Post.objects.all()
+#     }
+#     return render(request, 'blog/home.html', context)
 
 
 class PostListView(ListView):
@@ -22,9 +23,15 @@ class PostDetailView(DetailView):
     template_name = 'blog/post_detail.html'
 
 
-class PostCreateView(CreateView):
+class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    # template_name = 'blog/post_detail.html'
+    fields = ['title', 'content']
+    # template_name = 'blog/post_form.html'
+
+    # currently logged in user_to_be_author_of_post
+    def form_valid(self, form):
+        form.instance.author = self.request.user
+        return super().form_valid(form)
 
 
 def about(request):
