@@ -14,8 +14,8 @@ class Profile(models.Model):
 
 # resive profile image
 
-    def save(self):
-        super().save()
+    def save(self, *args, **kwargs):
+        super(Profile, self).save(*args, **kwargs)
 
         img = Image.open(self.image.path)
         # check if image is large then 300px
