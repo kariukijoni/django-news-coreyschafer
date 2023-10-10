@@ -1,6 +1,6 @@
 **drf_news**<br>
 **Django CRUD-BLOG APP with USER-PRIVELLEDGES**<br>
-A CRUD-BLOG APP (Create, Read, Update, Delete) with supported User priveledges(Register-Login-Forgot Passsword) built with Django 4, Bootstrap 4, and PostgreSQL/SQLite.
+`A CRUD-BLOG APP (Create, Read, Update, Delete)` with supported `User priveledges(Register-Login-Forgot Passsword)` built with Django 4, Bootstrap 4, and PostgreSQL/SQLite.
 
 **Getting Started**<br>
 Follow these steps to get the project up and running on your local environment:<br>
