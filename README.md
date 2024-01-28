@@ -11,7 +11,7 @@ Make sure you have Python and PostgreSQL/SQLite installed on your system.<br>
 **Installation**<br>
 Clone the repository to your local machine:<br>
 
-`git clone git@github.com:kariukijoni/drf_news.git.`<br>
+    `git@github.com:kariukijoni/django-news-coreyschafer.git.`<br>
 Change to the project directory:
 
 **cd drf_news**<br>
