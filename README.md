@@ -17,7 +17,7 @@ Change to the project directory:
 **cd drf_news**<br>
 Install the project dependencies using pip:<br>
 
-        `pip install -r requirements.txt`<br>
+  `pip install -r requirements.txt`<br>
 Create the PostgreSQL database by running migrations:<br>
 
 `python manage.py migrate`<br>
