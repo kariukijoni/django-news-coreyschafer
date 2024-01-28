@@ -20,10 +20,10 @@ Install the project dependencies using pip:<br>
     `pip install -r requirements.txt`<br>
 Create the PostgreSQL database by running migrations:<br>
 
-`python manage.py migrate`<br>
+    `python manage.py migrate`<br>
 Start the development server:<br>
 
-`python manage.py runserver`<br>
+    `python manage.py runserver`<br>
 Accessing the Django Admin<br>
 To access the Django admin panel, you'll need to create a superuser account:<br>
 
