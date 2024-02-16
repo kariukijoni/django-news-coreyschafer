@@ -11,19 +11,19 @@ Make sure you have Python and PostgreSQL/SQLite installed on your system.<br>
 **Installation**<br>
 Clone the repository to your local machine:<br>
 
-    `git@github.com:kariukijoni/django-news-coreyschafer.git.`<br>
+    `git@github.com:kariukijoni/django-news-coreyschafer.git.`
 Change to the project directory:
 
 **cd drf_news**<br>
 Install the project dependencies using pip:<br>
 
-    `pip install -r requirements.txt`<br>
+    `pip install -r requirements.txt`
 Create the PostgreSQL database by running migrations:<br>
 
-    `python manage.py migrate`<br>
+    `python manage.py migrate`
 Start the development server:<br>
 
-    `python manage.py runserver`<br>
+    `python manage.py runserver`
 Accessing the Django Admin<br>
 To access the Django admin panel, you'll need to create a superuser account:<br>
 
